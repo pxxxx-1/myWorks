@@ -1,0 +1,180 @@
+
+body{
+    background-color: rgba(194, 165, 228, 0.13);
+}
+.navbar {
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Logo样式 */
+.navbar .logo {
+    flex: 1;
+    display: block;
+    color: #000000;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links{
+    margin-top: 60px;
+}
+/* 选项卡样式 */
+.navbar a {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* 选项卡悬停效果：自定义下划线 */
+.navbar a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(194, 165, 228, 0.786);
+    margin-bottom: -5px;
+}
+
+/* 第二个选项卡（服务）未触发时显示下划线 */
+.navbar a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(194, 165, 228, 0.786);
+    margin-bottom: -5px;
+    opacity: 1; /* 确保下划线是可见的 */
+}
+
+/* 第一个选项卡（首页）未触发时隐藏下划线，但悬停时显示 */
+.navbar a:nth-child(1):hover::before,
+.navbar a:nth-child(1).active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(194, 165, 228, 0.353);
+    margin-bottom: -5px;
+    opacity: 1; /* 当悬停或激活时下划线可见 */
+}
+
+/* 默认情况下，第一个选项卡的下划线不可见 */
+.navbar a:nth-child(1)::before {
+    display: none;
+    opacity: 0; /* 设置透明度为0，即使存在也不可见 */
+    transition: opacity 0.3s ease; /* 透明度变化的过渡效果 */
+}
+
+.pic1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.description {
+    text-align: center; /* 文字居中对齐 */
+    max-width: 800px; /* 文字最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 20px; /* 文字周围的内边距 */
+    font-size: 18px; /* 字体大小 */
+    line-height: 1.6; /* 行高 */
+    color: #333; /* 字体颜色 */
+    border-top: 1px solid #ddd; /* 上边框 */
+    background-color: rgba(194, 165, 228, 0.353); /* 背景颜色 */
+}
+.pic {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; /* 水平居中对齐图片 */
+    flex-wrap: wrap; /* 允许图片换行 */
+    gap: 100px; /* 图片之间的间隔 */
+    margin-bottom: 20px; /* 图片与下方描述文字的间距 */
+}
+.pic img {
+    width: 400px; /* 设置图片统一宽度为200px */
+    height: auto; /* 保持图片的宽高比 */
+    transition: transform 0.3s ease; /* 平滑的变换效果 */
+}
+.pic img:hover {
+    transform: scale(1.1); /* 鼠标悬停时图片放大到1.1倍 */
+}
+#randomImage {
+    display: none;
+}
+.container {
+    padding-top: 100px;
+    padding-left: 350px;
+    height: 100vh; /* 容器占满视口高度 */
+    margin-top: 20px; /* 与上方内容保持一定距离 */
+}
+
+/* 图片样式 */
+#randomImage {
+    display: none; /* 初始时隐藏图片 */
+    max-width: 100%; /* 图片最大宽度为100%，但不超过容器宽度 */
+    height: auto; /* 保持图片宽高比 */
+}
+
+
+ /* 图片样式 */
+ #randomImage {
+    float: left;
+    display: none;
+    height: auto;
+    margin-right: 2%; /* 与按钮的间隔 */
+}
+
+/* 按钮样式 */
+#drawButton {
+    float:left;
+    margin-top: 200px;
+    margin-left: 200px;
+    transform: translateY(-50%);
+    padding: 0; /* 填充为0 */
+    width: 160px; /* 按钮宽度 */
+    height: 160px; /* 按钮高度，与宽度一致形成正圆 */
+    border-radius: 50%; /* 设置为正圆形 */
+    background-color:rgba(194, 165, 228, 0.78); /* 背景颜色 */
+    color: white; /* 文字颜色 */
+    font-size: 24px; /* 根据按钮大小调整字体大小 */
+    line-height: 60px; /* 使文本垂直居中 */
+    text-align: center; /* 文本居中 */
+    cursor: pointer; /* 鼠标悬停时显示手形图标 */
+    border: none; /* 移除边框 */
+    transition: transform 0.3s; /* 变换过渡效果 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* 添加阴影效果 */
+}
+
+/* 鼠标悬停效果 */
+#drawButton:hover {
+    transform: translateY(-50%) scale(1.1); /* 放大按钮 */
+}
+
+.chouqu{
+    text-align: center; /* 文字居中对齐 */
+    max-width: 800px; /* 文字最大宽度 */
+    margin: 0 auto; /* 水平居中 */
+    padding: 20px; /* 文字周围的内边距 */
+    font-size: 18px; /* 字体大小 */
+    line-height: 1.6; /* 行高 */
+    color: #333; /* 字体颜色 */
+    border-top: 1px solid #ddd; /* 上边框 */
+    background-color: rgba(194, 165, 228, 0.353); /* 背景颜色 */
+    margin-top: 100px;
+}

@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  *{
+    box-sizing:border-box;
+  }
+  body{
+    margin-top:0px;
+    margin-right:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Roboto, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Jhenghei", sans-serif;
+  }
+  .logo path{
+    pointer-events:none;
+    fill:none;
+    stroke-linecap:round;
+    stroke-width:7;
+    stroke:rgb(255, 255, 255);
+  }
+  .wechat-group img{
+    max-width:220px;
+    height:auto;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+    margin-top:0px;
+    margin-right:auto;
+    margin-bottom:0px;
+    margin-left:auto;
+    width:100%;
+  }
+  .welcome-img img{
+    width:100%;
+  }
+  .nav-link.dropdown-toggle{
+    text-align:center;
+    right:23px;
+  }
+  .text-white.mb-4{
+    color:#a74ac2;
+  }
+  .painting-steps {
+    font-family: 'Arial', sans-serif; /* 使用清晰易读的字体 */
+    background-color: hsl(238, 69%, 71%); /* 浅色背景 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 轻微的阴影，增加立体感 */
+    padding: 20px; /* 内边距 */
+    margin: 40px auto; /* 自动水平居中，垂直边距 */
+    max-width: 800px; /* 最大宽度 */
+    line-height: 1.6; /* 行高 */
+}
+
+.painting-steps h2 {
+    color: #e9f6fc; /* 标题颜色 */
+    border-bottom: 2px solid #ddd; /* 下边框 */
+    padding-bottom: 10px; /* 下内边距 */
+    margin-bottom: 20px; /* 与列表的间距 */
+}
+
+.painting-steps p {
+    margin-bottom: 10px; /* 段落之间的间距 */
+}
+
+.painting-steps ol {
+    margin-left: 0; /* 去掉列表的外边距 */
+    padding-left: 20px; /* 列表内边距 */
+}
+
+.painting-steps li {
+    margin-bottom: 10px; /* 列表项之间的间距 */
+}
+
+.painting-steps strong {
+    color: #6d32ac; /* 强调文本的颜色 */
+}
+.big{
+    background-color: #28244e;
+    padding: 20px;
+}
