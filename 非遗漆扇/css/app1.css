@@ -8,6 +8,7 @@ body{
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
 }
 
@@ -20,9 +21,6 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-}
-.nav-links{
-    margin-top: 60px;
 }
 /* 选项卡样式 */
 .navbar a {
