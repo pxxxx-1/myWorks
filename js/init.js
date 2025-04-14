@@ -515,7 +515,7 @@ function arlo_tm_animate_text(){
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["产品经理", "网页设计师", "Web开发人员"],
+			strings: ["产品助理", "网页设计师", "Web开发人员"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
